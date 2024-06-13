@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    display: flex;
+    background-color: #000;
+}
+
+/* sidebar */
+aside {
+    width: 17%;
+    background-color: #000;
+    color: #ececec;
+    padding-top: 35px;
+    padding-left: 30px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    font-family: "Quicksand";
+    text-transform: uppercase;
+}
+
+main {
+    width: 83%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ececec;
+    cursor: pointer;
+}
+
+aside h2 {
+    margin-bottom: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Quicksand";
+    font-weight: 700;
+}
+
+aside li{
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+#icons svg {
+    height: 13px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#icons svg:hover {
+    fill: #df0e62;
+}
+
+.icon-margin {
+    margin-left: 20px;
+}
+
+/* header */ 
+header {
+    background-image: url(img/img_9.jpg);
+    background-size: cover;
+}
+
+
+header img {
+    width: 100%;
+}
+
+#welcome-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #ececec;
+    background-color: #00000095;
+}
+
+#welcome-container h1 {
+    font-size: 65px;
+    margin-bottom: 10px;
+    font-family: "Oswald";
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#welcome-container p {
+    width: 60%;
+    font-size: 20px;
+    margin-bottom: 45px;
+    font-family: "Quicksand";
+    font-weight: lighter;
+    line-height: 35px;
+    text-align: center;
+}
+
+#contact-button {
+    background-color: #df0e62;
+    height: 50px;
+    width: 15%;
+    text-align: center;
+    padding-top: 14px;
+    font-size: 16px;
+    border-radius: 50px;
+    font-family: "Quicksand";
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .3s;
+}
+
+#contact-button:hover{
+    background-color: #a80747;
+}
+
+svg { 
+    fill: white;
+}
+
+/* section de imagens */ 
+#images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #000;
+    row-gap: 5px;
+}
+
+.img-container {
+    width: 33%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.img-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: .4s;
+}
+
+/* overflow nas imagens */
+.img-container img:hover {
+    filter: brightness(40%);
+}
+
+.img-container svg {
+    height: 25px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.img-container:hover svg {
+    opacity: 1;
+    top: 50%;
+}
+
+/* testimonial */
+#testimonial-container {
+    margin-top: 90px;
+    text-align: center;
+    padding: 0 200px 150px;
+}
+
+h2 {
+    color: #fff;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+#testimonial-container h2 {
+    margin-bottom: 50px;
+}
+
+#testimonial-container img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#testimonial-container #name {
+    color: #fff;
+    margin-top: 20px;
+    font-family: "Quicksand";
+    font-weight: 700;
+}
+
+#testimonial-container p {
+    color: #979797;
+    font-family: "Quicksand";
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+/* biography section */
+#biography-section {
+    background-color: #1a1a1a;
+    padding: 70px;
+    position: relative;
+}
+
+.line{
+    background-color: #df0e62;
+    width: 10%;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.biography-h3 {
+    font-family: "Oswald";
+    color: #fff;
+    font-weight: 400;
+    font-size: 33px;
+    margin-bottom: 8px;
+}
+
+#biography-container {
+    margin: 40px 80px;
+}
+
+#biography-container h2 {
+    font-family: "Oswald";
+    margin-bottom: 60px;
+}
+
+#biography-container img {
+    width: 40%;
+    border-radius: 1%;
+    margin-bottom: 35px;
+}
+
+#biography-container p {
+    font-family: "Quicksand";
+    color: #777777;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+#biography-container #first-p {
+    margin-bottom: 15px;
+}
+
+.highlighted-text {
+    color: #df0e62;
+    transition: .3s;
+}
+
+.highlighted-text:hover {
+    color: #9d0a45;
+}
+
+#biography-list {
+    display: flex;
+    font-family: "Quicksand";
+    color: #777777;
+    line-height: 40px;
+}
+
+#biography-list ul {
+    margin-right: 140px;
+}
+
+#biography-list svg {
+    height: 17px;
+    fill: #6ead0e;
+    margin-right: 15px;
+ 
+}
+
+/* blog section */
+#blog-section {
+    padding: 100px 40px;
+}
+
+#blog-section img {
+    width: 27%;
+    height: 200px;
+}
+
+#blog-container p {
+    color: #777;
+}
+
+#blog-container h2 {
+    margin-left: 140px;
+    margin-bottom: 60px;
+}
+
+
+.post {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.post .text {
+    max-width: 40%;
+    margin-left: 40px;
+}
+
+.post .post-title {
+    font-family: "Oswald";
+    font-size: 24px;
+}
+
+.post p {
+    font-family: "Quicksand";
+    margin-bottom: 20px;
+    max-width: 90%;
+    line-height: 27px;
+}
+
+#blog-page-number {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#blog-page-number span, a {
+    font-family: "Quicksand";
+}
+
+#blog-page-number .selected {
+    color: #777;
+}
+
+#blog-page-number span {
+    margin-right: 80px;
+}
+
+/* contact form*/
+#contact-section {
+    background-color: #1a1a1a;
+    position: relative;
+    padding: 80px 70px;
+}
+
+#contact-container {
+    max-width: 80%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    color: white;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    font-family: "Quicksand";
+}
+
+input {
+    border: 0;
+}
+
+form input,
+form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border: 0px;
+    background-color: #1a1a1a;
+    border-BOTTOM: 2px solid #ccc;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form textarea::placeholder {
+    color: gray;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+#submit-button {
+   border: none;
+   background-color: #df0e62;
+   height: 50px;
+   width: 18%;
+   padding-top: 12px;
+   font-size: 16px;
+   border-radius: 50px;
+   font-family: "Quicksand";
+   text-transform: uppercase;
+   font-weight: bold;
+   transition: .3s;
+   margin-top: 45px;
+   color: #fff;
+}
+
+#submit-button:hover{
+    background-color: #a80747;
+}
+
+/* footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 55px;
+    font-family: "Quicksand";
+    text-align: center;
+}
